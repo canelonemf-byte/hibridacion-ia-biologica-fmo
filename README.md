@@ -33,3 +33,6 @@ Archivos binarios (presentaciones, PDFs grandes, vídeos, imágenes, zips, docx)
 ---
 Los archivos `.trashed-*`, las copias («- copia») y los duplicados entre carpetas no se han listado.
 - Referencias: [REFERENCIAS.md](REFERENCIAS.md)
+
+## Código realizable hoy (modelo de referencia público, no datos del autor)
+`fmo/`: Hamiltoniano de 7 sitios de Adolphs y Renger (2006) y dinámica de Lindblad con desfase puro y sumidero en el sitio 3. Reproduce el transporte asistido por desfase: la eficiencia a 5 ps sube de 0,08 (sin desfase) a ~0,39 (100 cm⁻¹) y baja con desfase fuerte. No es HEOM; para comparar con Ishizaki y Fleming (2009) haría falta HEOM. `pip install -r requirements.txt && pytest`; `python examples/eficiencia_vs_desfase.py`.
