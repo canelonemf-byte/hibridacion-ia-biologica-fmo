@@ -32,3 +32,4 @@ Archivos binarios (presentaciones, PDFs grandes, vídeos, imágenes, zips, docx)
 
 ---
 Los archivos `.trashed-*`, las copias («- copia») y los duplicados entre carpetas no se han listado.
+- Referencias: [REFERENCIAS.md](REFERENCIAS.md)
