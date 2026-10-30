@@ -1,38 +1,47 @@
 # hibridacion-ia-biologica-fmo
 
-Hibridación inteligencia artificial, biología y mecánica cuántica (pipeline FMO-HEOM-IA).
+# hibridacion-ia-biologica-fmo  Hibridación inteligencia artificial, biología y mecánica cuántica (pipeline FMO-HEOM-IA).  **Autor:** Lázaro López Paz · **Licencia:** MIT (ver `LICENSE`)
 
-**Autor:** Lázaro López Paz · **Licencia:** MIT (ver `LICENSE`)
+## Autoría
 
-## Carpetas de origen en Google Drive
+- **Autor:** Lázaro López Paz, El Prat de Llobregat, Barcelona, España
+- **ORCID:** [0000-0001-8601-1963](https://orcid.org/0000-0001-8601-1963)
+- Elaborado con asistencia de inteligencia artificial
+- Sin afiliaciones institucionales
 
-- https://drive.google.com/drive/folders/1Y4jef6nLHD5YSy7e7DXkzaUtNRpka93A
-- https://drive.google.com/drive/folders/1PMquM4ydGQ0NQt5lBdKueRC2lBCo40ky
-- https://drive.google.com/drive/folders/1PyYc0abbJw3IcunqO9BOnfvVKsAoc-EI
+## Estado
 
-## Archivos incluidos
+Proyecto en desarrollo / documentación. No afirmar validación experimental salvo que el código o los informes del propio repositorio lo demuestren.
 
-- `FMO_ATLAS_PAPER_WIN11.txt` ← FMO_ATLAS_PAPER_WIN11.txt
-- `docs/Aqui_tienes_el_script_maestro_unificado_main_atlas.md` ← Aquí tienes el script maestro unificado main_atlas.pdf
-- `docs/Ejecutable_proyecto_inteligencia_artificial_hibridacion.md` ← Ejecutable proyecto inteligencia artificial híbridación .pdf
-- `docs/FMO_Hybrid_AI_Technical_Report.md` ← FMO_Hybrid_AI_Technical_Report.pdf
-- `docs/Implementacion_Avanzada-_Proyecto_Atlas_Cientifico_FMO-HEOM-IA.md` ← Implementación Avanzada- Proyecto Atlas Científico FMO-HEOM-IA.pdf
+## Contenido (raíz)
 
-## Pendiente: en Drive
+```
+docs/
+examples/
+fmo/
+FMO_ATLAS_PAPER_WIN11.txt
+LICENSE
+README.md
+REFERENCIAS.md
+requirements.txt
+tests/
+```
 
-Archivos binarios (presentaciones, PDFs grandes, vídeos, imágenes, zips, docx) que no se pudieron pasar a texto. Siguen en Drive:
+## Instalación
 
-- FMO Hybrid AI Blueprint.pdf · pendiente: en Drive · https://drive.google.com/file/d/1ai4xFp29Kiunk6loTvzt470WM-jxCR_B/view?usp=drivesdk
-- FMO Quantum Pipeline.pdf · pendiente: en Drive · https://drive.google.com/file/d/1D2qfuwstqyFRE2__G7i44K04OKVwzibv/view?usp=drivesdk
-- Híbridación inteligencia artificial FMO Quantum Pipeline.pdf · pendiente: en Drive · https://drive.google.com/file/d/1G0nFLGHc9m-JE-IomJ7ib2KnXnOl4k-Q/view?usp=drivesdk
-- Híbridación inteligencia artificial_FMO Hybrid AI Blueprint.pdf · pendiente: en Drive · https://drive.google.com/file/d/1Xu31z3QjmykYcIWtRDIL_GgxO02ALTid/view?usp=drivesdk
-- PROYECTO_COMPLETO_FMO_HEOM_IA_UNICO(1).pdf · pendiente: en Drive · https://drive.google.com/file/d/1QPNCTvl-civQoGIzXjS-CWk8tVemFsic/view?usp=drivesdk
-- Pipeline Híbrido IA-Cuántico FMO.png · pendiente: en Drive · https://drive.google.com/file/d/1oiDMU6G3c3maUczQ95YK1I2fdIVcSUXR/view?usp=drivesdk
-- The Hybrid Quantum-Biological AI Pipeline.png · pendiente: en Drive · https://drive.google.com/file/d/11SzgWzvSwLKEHP1AvCWijYVtZCqSMJze/view?usp=drivesdk
+```bash
+pip install -r requirements.txt
+```
 
----
-Los archivos `.trashed-*`, las copias («- copia») y los duplicados entre carpetas no se han listado.
-- Referencias: [REFERENCIAS.md](REFERENCIAS.md)
 
-## Código realizable hoy (modelo de referencia público, no datos del autor)
-`fmo/`: Hamiltoniano de 7 sitios de Adolphs y Renger (2006) y dinámica de Lindblad con desfase puro y sumidero en el sitio 3. Reproduce el transporte asistido por desfase: la eficiencia a 5 ps sube de 0,08 (sin desfase) a ~0,39 (100 cm⁻¹) y baja con desfase fuerte. No es HEOM; para comparar con Ishizaki y Fleming (2009) haría falta HEOM. `pip install -r requirements.txt && pytest`; `python examples/eficiencia_vs_desfase.py`.
+## Uso
+
+Archivos Python principales (revisar cada uno antes de ejecutar):
+- `examples/eficiencia_vs_desfase.py`
+- `fmo/__init__.py`
+- `tests/test_fmo.py`
+
+
+## Licencia
+
+Ver archivo `LICENSE` (o `LICENSE.md`) en la raíz. Documentación bajo CC BY 4.0 cuando aplique; código habitualmente MIT, salvo indicación contraria.
